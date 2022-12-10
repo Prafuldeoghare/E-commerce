@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  /* background-color: #f8f9fa; */
+  overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+@layer base {
+  .s1 {
+    @apply font-poppins font-semibold text-s1 leading-[45px];
+  }
+
+  .s2 {
+    @apply font-poppins font-semibold text-s2 leading-[39px];
+  }
+
+  .s3 {
+    @apply font-poppins font-semibold text-s3 leading-[33px];
+  }
+
+  .s4 {
+    @apply font-poppins font-semibold text-s4 leading-[27px];
+  }
+
+  .s5 {
+    @apply font-poppins font-medium text-s5 leading-[22px];
+  }
+
+  .s6 {
+    @apply font-poppins font-semibold text-s6 leading-[18px];
+  }
+
+  .button {
+    @apply font-poppins font-bold text-s5 leading-[22.5px];
+  }
+
+  .lead {
+    @apply font-sans font-normal text-lead leading-[23.15px];
+  }
+
+  .body {
+    @apply font-sans font-normal text-body leading-[19.07px];
+  }
+
+  .caption {
+    @apply font-sans font-normal text-s6 leading-[16px];
+  }
+}
+
+@layer components {
+  .s1 {
+    @apply font-poppins font-semibold text-s1 leading-[45px];
+  }
+
+  .s2 {
+    @apply font-poppins font-semibold text-s2 leading-[39px];
+  }
+
+  .s3 {
+    @apply font-poppins font-semibold text-s3 leading-[33px];
+  }
+
+  .s4 {
+    @apply font-poppins font-semibold text-s4 leading-[27px];
+  }
+
+  .s5 {
+    @apply font-poppins font-medium text-s5 leading-[22px];
+  }
+
+  .s6 {
+    @apply font-poppins font-semibold text-s6 leading-[18px];
+  }
+
+  .button {
+    @apply font-poppins font-bold text-s5 leading-[22.5px];
+  }
+
+  .lead {
+    @apply font-sans font-normal text-lead leading-[23.15px];
+  }
+
+  .body {
+    @apply font-sans font-normal text-body leading-[19.07px];
+  }
+
+  .caption {
+    @apply font-sans font-normal text-s6 leading-[16px];
+  }
+}
+
+*:focus {
+  outline: none;
+}
