@@ -33,7 +33,7 @@ function CategoriesSelection() {
           }}
         />
       </div>
-      {allCategories?.map((res) => (
+      {allCategories?.map((res: any) => (
         <div className="mt-3">
           <IconButton
             name={res}

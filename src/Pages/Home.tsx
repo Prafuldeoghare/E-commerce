@@ -8,7 +8,7 @@ import { setAllProducts } from "../Store/ProductSlice";
 function Home() {
   const dispatch = useDispatch();
   const { allProducts, ...rest } = useSelector(
-    (state) => state?.productReducer
+    (state: any) => state?.productReducer
   );
 
   useEffect(() => {
@@ -25,7 +25,7 @@ function Home() {
         <Aside />
       </div>
       <div className="col-span-10 grid grid-cols-5 gap-5">
-        {allProducts?.map((res) => (
+        {allProducts?.map((res: any) => (
           <div className="col-span-1">
             <Card {...res} />
           </div>

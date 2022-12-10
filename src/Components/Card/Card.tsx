@@ -1,5 +1,3 @@
-import React from "react";
-import { Rating } from "react-simple-star-rating";
 import StarRating from "../Rating/StarRating";
 
 interface CardProps {
@@ -8,7 +6,11 @@ interface CardProps {
   price?: string;
   category?: string;
   title?: string;
-  rating?: object;
+  rating?: RatingProps;
+}
+
+interface RatingProps {
+  rate: number;
 }
 
 function Card(props: CardProps) {
@@ -27,7 +29,7 @@ function Card(props: CardProps) {
             Category: <span>{props?.category}</span>
           </div>
           <div className="mt-1 w-full text-[#FFC749]">
-            {StarRating(props?.rating?.rate)}
+            {StarRating(props?.rating?.rate ?? 0)}
           </div>
         </div>
       </div>

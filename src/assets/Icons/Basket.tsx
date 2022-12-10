@@ -1,6 +1,8 @@
 import React from "react";
 
-function Basket(props) {
+function Basket(
+  props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
+) {
   return (
     <svg
       width="18"

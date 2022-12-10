@@ -1,6 +1,6 @@
 import React from "react";
 
-function Grid(props) {
+function Grid(props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="16"

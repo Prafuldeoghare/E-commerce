@@ -1,6 +1,6 @@
 import React from "react";
 
-function Users(props) {
+function Users(props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="24"

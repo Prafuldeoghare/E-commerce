@@ -19,5 +19,6 @@ const ProductSlice = createSlice({
 });
 
 export const { setAllProducts, setAllCategories } = ProductSlice.actions;
-export const selector = (state) => state?.productReducer;
+export const selector = (state: { productReducer: any }) =>
+  state?.productReducer;
 export default ProductSlice.reducer;

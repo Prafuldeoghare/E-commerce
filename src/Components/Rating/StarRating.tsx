@@ -1,6 +1,6 @@
 import React from "react";
 
-const StarRating = (rating) => {
+const StarRating = (rating: number) => {
   if (rating === 0 || rating > 5) {
     return (
       <div className="flex items-center">

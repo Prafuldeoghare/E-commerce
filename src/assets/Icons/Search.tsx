@@ -1,6 +1,6 @@
 import React from "react";
 
-function Search(props) {
+function Search(props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="16"
